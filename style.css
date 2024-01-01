@@ -1,9 +1,57 @@
-#quiz{
-    display: flex;
- background-color: rgb(187, 255, 29);
-    flex-direction: column;
-    margin: 0 auto;
-    width: 300px;
-    height: 500px;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+  
+    background: linear-gradient(to left, #660033 0%, #003366 100%);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.app{
+    background-color: beige;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 10px ;
+    width: 90%;
+    max-width: 600px;
+
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h1 {
+    font-size: 18px;
+    color: blueviolet;
+    font-weight :600px;
+}
+.button{
+    font-weight: 500;
+padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+    border: 1px solid rgb(73, 68, 68);
+    border-radius: 4px;
+    color:black ;
+} 
+.button:hover:not([disabled]){
+color: white;
+background-color: rgb(44, 42, 40);
+}
+.button:disabled{
+    cursor: no-drop;
+}
+.button2{
+    width: 60px;
+  margin: 0 auto;
+    display: none;
+}
+.correct{
+    background-color: rgb(94, 212, 94);
+}
+.incorrect{
+    background-color: rgb(208, 63, 63);
 }
